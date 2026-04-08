@@ -13,13 +13,16 @@ export default function App() {
     }
     return (
         <div className="min-h-screen bg-gray-50">
+            <header className="bg-orange-500 py-4 px-4 shadow-md">
+                <h1 className="text-white text-2xl font-bold max-w-2xl mx-auto text-center">Find Restaurants</h1>
+            </header>
             <div className="max-w-2xl mx-auto px-4 py-10">
-                <h1 className="text-3xl font-bold text-gray-800 mb-6">Find Restaurants</h1>
                 <SearchBar value={searchInput} onChange={setSearchInput} onSearch={findRestaurants}/>
                 <div className="mt-8 flex flex-col gap-4">
                     {isLoading && (
                         <div className="flex justify-center items-center mt-16">
-                            <div className="animate-spin rounded-full h-12 w-12 border-4 border-orange-500 border-t-transparent"/>
+                            <div
+                                className="animate-spin rounded-full h-12 w-12 border-4 border-orange-500 border-t-transparent"/>
                         </div>
                     )}
 
@@ -37,7 +40,7 @@ export default function App() {
                     )}
 
                     {!isLoading && !isError && data && (
-                        <RestaurantList restaurants={data ?? []} />
+                        <RestaurantList restaurants={data ?? []}/>
                     )}
                 </div>
             </div>
