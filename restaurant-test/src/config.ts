@@ -1,1 +1,1 @@
-export const API_BASE_URL = 'https://uk.api.just-eat.io/discovery/uk/restaurants/enriched/bypostcode/'
+export const API_BASE_URL = '/api/discovery/uk/restaurants/enriched/bypostcode/'

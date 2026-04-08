@@ -11,7 +11,7 @@ const RestaurantCard = ({name, cuisines, rating, address}: RestaurantCardProps) 
             <div className="flex justify-between items-start">
                 <h2 className="text-lg font-bold text-gray-800">{name}</h2>
                 <span
-                    className="flex items-center gap-1 bg-orange-100 text-orange-600 font-semibold text-sm px-2 py-1 rounded-full">
+                    className="flex items-center gap-1 bg-orange-100 text-orange-600 font-semibold text-sm px-2 py-1 rounded-full shrink-0">
             ★ {rating}
         </span>
             </div>

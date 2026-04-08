@@ -4,6 +4,7 @@ import {getRestaurants} from "../utils/restaurantService.ts";
 export const useRestaurants = (postcode: string) => {
     return useQuery({
         queryKey: ['restaurants', postcode],
-        queryFn: () => getRestaurants(postcode)
+        queryFn: () => getRestaurants(postcode),
+        enabled: postcode.length > 0
     })
 }
