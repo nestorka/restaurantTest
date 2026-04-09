@@ -12,22 +12,10 @@ A React application that allows users to search for restaurants by UK postcode.
 
 ## Getting Started
 
-### Install dependencies
-npm install
-
-### Start the development server
-npm run dev
-
-Open http://localhost:5173
-
-### Run tests
-npm run test
-
-### Build for production
-npm run build
-
-### Preview production build
-npm run preview
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start the dev server: `npm run dev`
+4. Open `http://localhost:5173`
 
 ## Design Decisions
 
